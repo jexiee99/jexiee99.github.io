@@ -6,4 +6,4 @@ title: "HTML Link dan List"
 penjelasan tentang Link dan List pada Html.
 
 
-![HTML Link dan List](/assets/images/gambar.JPG)
+![Foto Masjid](/assets/images/gambar.jpg){: width="300px" style="display:block; margin:0 auto;"}
