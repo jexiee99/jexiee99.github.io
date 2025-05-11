@@ -1,11 +1,123 @@
-.current {
-    color: green;
-    font-weight: boldcc;
+:root {
+    --primary: #db5555;
+    --secondary: #f4f4f4;
+    --accent: #471717;
+    --dark: #333;
+    --light: #fff;
+    --font: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    font-family: var(--font);
+    background-color: var(--secondary);
+    margin: 0;
+    padding: 0;
+    color: var(--dark);
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: auto;
+    padding: 24px;
+  }
+  
+  header {
     text-align: center;
-}
-
-body {
-    background-color: pink;
-    font-size: 25px;
-}
-
+    padding: 48px 24px;
+    background-color: var(--primary);
+    color: var(--light);
+    position: relative;
+  }
+  
+  header img.profile-picture {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--light);
+    margin-top: -80px;
+    background-color: var(--light);
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    background: var(--primary);
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 12px 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--accent);
+  }
+  
+  .hero {
+    background: url('/assets/images/bg-hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 64px 24px;
+    text-align: center;
+  }
+  
+  .hero-text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 24px;
+    border-radius: 12px;
+  }
+  
+  .content-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    padding: 32px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 32px;
+  }
+  
+  h2, h3 {
+    margin-bottom: 16px;
+    color: var(--primary);
+  }
+  
+  .btn-primary, .btn-warning {
+    padding: 12px 24px;
+    margin-top: 16px;
+    border: none;
+    border-radius: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: var(--primary);
+    color: white;
+  }
+  
+  .btn-warning {
+    background-color: var(--accent);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #388e3c;
+  }
+  
+  .btn-warning:hover {
+    background-color: #e68900;
+  }
+  
+  footer {
+    text-align: center;
+    background: var(--primary);
+    color: white;
+    padding: 16px;
+    margin-top: 48px;
+  }
+  
